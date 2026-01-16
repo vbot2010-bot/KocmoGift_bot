@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btn-profile").addEventListener("click", () => showPage(pages.profile));
 
   // TonConnect
-  const OWNER_WALLET = "UQAFXBXzBzau6ZCWzruiVrlTg3HAc8MF6gKIntqTLDifuWOi"; // замените на ваш TON кошелек
+  const OWNER_WALLET = "UQAFXBXzBzau6ZCWzruiVrlTg3HAc8MF6gKIntqTLDifuWOi";
   const walletStatus = document.getElementById("wallet-status");
   const connectBtn = document.getElementById("connect-wallet");
   const depositBtn = document.getElementById("deposit");
 
   const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-    manifestUrl: "https://kocmo-gift-exg8x4ap8-kocmogift.vercel.app//tonconnect-manifest.json"
+    manifestUrl: "https://kocmo-gift-exg8x4ap8-kocmogift.vercel.app/tonconnect-manifest.json"
   });
 
   function updateWalletUI(wallet) {
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       balanceEl.innerText = balance;
       alert("Баланс пополнен!");
     } catch {
-      alert("Платёж отменён");
+      alert("Платеж отменён");
     }
   });
 
