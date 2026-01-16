@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btn-profile").addEventListener("click", () => showPage(pages.profile));
 
   // TonConnect
-  const OWNER_WALLET = "YOUR_TON_WALLET"; // замените на ваш TON кошелек
+  const OWNER_WALLET = "UQAFXBXzBzau6ZCWzruiVrlTg3HAc8MF6gKIntqTLDifuWOi"; // замените на ваш TON кошелек
   const walletStatus = document.getElementById("wallet-status");
   const connectBtn = document.getElementById("connect-wallet");
   const depositBtn = document.getElementById("deposit");
