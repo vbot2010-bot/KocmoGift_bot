@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Навигация */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.nav button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.nav button:hover { background-color: #0056b3; }
+
+/* Страницы */
+.page { display: none; }
+.page.active { display: block; }
+
+/* Кнопки */
+button {
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover { background-color: #218838; }
+
+/* Инвентарь */
+#inventory {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  min-height: 50px;
+  background-color: #fafafa;
+}
+
+#inventory div {
+  padding: 5px;
+  margin: 3px 0;
+  background-color: #e9ecef;
+  border-radius: 6px;
+}
