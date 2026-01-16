@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>KocmoGift</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>KocmoGift 🎁</h1>
+
+    <!-- Навигация -->
+    <div class="nav">
+      <button id="btn-home">🏠 Главная</button>
+      <button id="btn-profile">👤 Профиль</button>
+    </div>
+
+    <!-- Главная -->
+    <div id="home" class="page active">
+      <p>Баланс: <span id="balance">10</span> TON</p>
+      <button id="open-case">🎁 Открыть кейс</button>
+      <h4>Инвентарь</h4>
+      <div id="inventory">Пусто</div>
+    </div>
+
+    <!-- Профиль -->
+    <div id="profile" class="page">
+      <p>ID: <span id="user-id">—</span></p>
+      <p>Username: <span id="username">—</span></p>
+      <p id="wallet-status">❌ Кошелёк не подключён</p>
+      <button id="connect-wallet">🔗 Подключить кошелёк</button>
+      <button id="deposit">💎 Пополнить баланс</button>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
